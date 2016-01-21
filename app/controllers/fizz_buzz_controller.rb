@@ -7,8 +7,9 @@ class FizzBuzzController < ApplicationController
 
   def fizz_buzz
     if !number_valid n
-      404
+      raise ActionController::RoutingError.new('Not Found')
+    else
+      render :json => is_fizz_buzz(params[:number])
     end
-    render :json => is_fizz_buzz(params[:number])
   end
 end
