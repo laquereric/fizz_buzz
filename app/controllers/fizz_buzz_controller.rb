@@ -10,7 +10,7 @@ class FizzBuzzController < ApplicationController
     if !fizz_buzz_valid params[:number]
       raise ActionController::RoutingError.new('Not Found')
     else
-      render :text => is_fizz_buzz( params[:number] )
+      render :text => is_fizz_buzz( params[:number].to_i )
     end
   end
 
