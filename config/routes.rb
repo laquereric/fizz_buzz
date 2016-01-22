@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'fizz_buzz#index'
-  get 'fizz_buzz/:number' => 'fizz_buzz#is_fizz_buzz'
+  get 'fizz_buzz/:number' => 'fizz_buzz#fizz_buzz'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

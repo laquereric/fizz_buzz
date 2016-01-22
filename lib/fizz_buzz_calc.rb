@@ -1,6 +1,7 @@
 module FizzBuzzCalc
-  def number_valid n
-    n.is_a FixNum
+
+  def fizz_buzz_valid n
+    n.to_f.to_s == n.to_s || n.to_i.to_s == n.to_s
   end
 
   def is_fizz_buzz n
